@@ -1,12 +1,12 @@
 {
   "settings": {
     "name": "olaFPV",
-    "currentPage": "test.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "colorm",
       "title": "ColorM",
       "styling": {
-        "primaryColor": "#c0392b",
+        "primaryColor": "#f39c12",
         "buttonsColor": "#000000",
         "secondaryColor": "#9b59b6",
         "successColor": "#2ecc71",
@@ -25,8 +25,8 @@
     "path": "@PROJECT_PATH@",
     "siteFonts": [],
     "versionFirst": "4.7.8",
-    "uniqCompNum": 12,
-    "versionPublish": "4.8.6",
+    "uniqCompNum": 7,
+    "versionPublish": "4.7.8",
     "screenshot": "screenshot.png",
     "siteUrl": "http://olafpv.com",
     "sitemapSwitcherAuto": "on",
@@ -38,10 +38,10 @@
     "sitemapSwitcher": "on"
   },
   "pages": {
-    "test.html": {
+    "index.html": {
       "settings": {
         "main": true,
-        "title": "Olaf FPV",
+        "title": "Home",
         "meta_descr": "",
         "header_custom": "",
         "footer_custom": "",
@@ -116,14 +116,14 @@
             "fontColor": "#3498db",
             "fontHoverColor": "@primaryColor"
           },
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">HOME</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"http://www.m.me/olaffpv\" aria-expanded=\"false\" target=\"_blank\">Contact Me</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>",
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\">Top</a></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"https://mobirise.com/\" aria-expanded=\"true\">Products</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://pirofliprc.com\">Flight Controller</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://pirofliprc.com\">PDB</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"https://mobirise.com/\">Energizer Batteries</a></div></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"https://mobirise.com/\" aria-expanded=\"false\">Contact Me</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>",
           "logo": {
             "image": {
               "active": true,
-              "src": "@PROJECT_PATH@/assets/images/logoshortwhite-234x128.png",
+              "src": "@PROJECT_PATH@/assets/images/36137421-424904347920172-4162843313017192448-n-228x128.jpg",
               "height": 128,
               "alt": "Mobirise",
-              "link": "#top",
+              "link": "https://mobirise.com",
               "title": ""
             },
             "iconFont": {
@@ -141,20 +141,6 @@
           "_anchor": "menu-0"
         },
         {
-          "_params": {
-            "paddingTop": 1,
-            "paddingBottom": 1,
-            "bgColor": "#dddddd"
-          },
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"index.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">DOWNLOAD Spec Sheet</a> ",
-          "alias": "colorm/components",
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "buttons1",
-          "_anchor": "buttons1-8"
-        },
-        {
           "_styles": {
             ".elements-content": {
               "padding-bottom": "50px"
@@ -166,9 +152,6 @@
             },
             ".mbr-section-title, .tab-pane": {
               "color": "#000"
-            },
-            ".mbr-section-title": {
-              "color": "#c0392b"
             }
           },
           "_params": {
@@ -191,18 +174,18 @@
             "overlayOpacity": 0.9
           },
           "arrowDown": "@THEME_PATH@/components/_images/header/arrowDown.png",
-          "title": "OlaFPV VTX Assassin",
-          "text": "<b>The OlaFPV VTX Assassin is a 30-30 mounting board for your VTX and RX with an integrated “VTX Kill switch”, meaning you can turn your VTX off based off a signal from your FC. This allows for ultra fast pit stops at team races, back to back flight of separate aircraft, and the peace of mind that comes with the ability to power down your vtx, which is often prone to overheating. The VTX Assassin is compatible with virtually any RX and VTX, but if you want to hard solder your RX and VTX directly to the VTX Assassin PCB, only the following is supported: <br>TBS Unify line of VTXs (Race, HV, 5v Pro, Nano) <br>TBS Crossfire Nano <br>FrSky XM<br>Frsky XM+</b><br>",
-          "title1": "OLAF VTX ASSASIN",
-          "title2": "Specs &amp; Supported Hardware",
-          "title3": "Pit Stop Feature",
+          "title": "<br>Who is OlaFPV?",
+          "text": "Lorem Impsum 3.1415 blah blah blah short intro to the 3 bullet points down there!",
+          "title1": "School &nbsp;Age",
+          "title2": "FPV Career",
+          "title3": "Your Lab",
           "title4": "HOST ANYWHERE",
           "title5": "IMAGE/CONTENT SLIDER",
           "title6": "CONTACT FORMS",
-          "tabTitle": "<li class=\"nav-item\" style=\"display: block;\"><a class=\"nav-link active\" role=\"tab\" data-toggle=\"tab\" href=\"#tab1header9-7\" aria-expanded=\"true\">Features</a></li><li class=\"nav-item\" style=\"display: block;\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#tab2header9-7\" aria-expanded=\"false\">Supported Hardware</a></li><li class=\"nav-item\" style=\"display: block;\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#tab3header9-7\" aria-expanded=\"false\">Pit Stop</a></li><li class=\"nav-item\" style=\"display: none\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#tab4header9-7\">Awesome</a></li><li class=\"nav-item\" style=\"display: none\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#tab5header9-7\">Amazing</a></li><li class=\"nav-item\" style=\"display: none\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#tab6header9-7\">Beautiful</a></li>",
+          "tabTitle": "<li class=\"nav-item\" style=\"display: block;\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#tab1header9-1\" aria-expanded=\"false\">Human</a></li><li class=\"nav-item\" style=\"display: block;\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#tab2header9-1\" aria-expanded=\"false\">Pilot</a></li><li class=\"nav-item\" style=\"display: block;\"><a class=\"nav-link active\" role=\"tab\" data-toggle=\"tab\" href=\"#tab3header9-1\" aria-expanded=\"true\">Inventor</a></li><li class=\"nav-item\" style=\"display: none\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#tab4header9-1\">Awesome</a></li><li class=\"nav-item\" style=\"display: none\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#tab5header9-1\">Amazing</a></li><li class=\"nav-item\" style=\"display: none\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#tab6header9-1\">Beautiful</a></li>",
           "media11": {
             "image": {
-              "src": "@PROJECT_PATH@/assets/images/45155389-506406193103320-1880775632141418496-o-2016x1512.jpg",
+              "src": "@PROJECT_PATH@/assets/images/30624075-390636038013670-2586922389371617280-o-2048x1305.jpg",
               "class": "card-img-top",
               "active": true,
               "link": "",
@@ -212,7 +195,7 @@
           },
           "media12": {
             "image": {
-              "src": "@PROJECT_PATH@/assets/images/45192611-506406159769990-5457974315825758208-o-1944x1296.jpg",
+              "src": "@PROJECT_PATH@/assets/images/30415004-389563608120913-5837931548308930560-n-960x960.jpg",
               "class": "card-img-top",
               "active": true,
               "link": "",
@@ -222,7 +205,7 @@
           },
           "media13": {
             "image": {
-              "src": "@PROJECT_PATH@/assets/images/45105054-506406183103321-7250830292380811264-o-1840x1228.jpg",
+              "src": "@PROJECT_PATH@/assets/images/35972176-421671784910095-3767705741964607488-n-2-1536x2048.jpg",
               "class": "card-img-top",
               "active": true,
               "link": "",
@@ -253,38 +236,35 @@
           },
           "media21": {
             "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-header5",
-              "linkInNewWindow": false,
-              "name": "features",
-              "family": "MobiriseIcons",
               "active": true,
-              "link": "",
+              "class": "mbr-iconfont mbr-iconfont-header5",
+              "name": "linegraph",
+              "link": "https://mobirise.com",
               "size": 0,
-              "color": "@primaryColor"
+              "color": "@primaryColor",
+              "family": "et-line"
             }
           },
           "media22": {
             "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-header5",
-              "linkInNewWindow": false,
-              "name": "hardware-memory",
-              "family": "Material-Design-Icons",
               "active": true,
-              "link": "",
+              "class": "mbr-iconfont mbr-iconfont-header5",
+              "name": "attachment",
+              "link": "https://mobirise.com",
               "size": 0,
-              "color": "@primaryColor"
+              "color": "@primaryColor",
+              "family": "et-line"
             }
           },
           "media23": {
             "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-header5",
-              "linkInNewWindow": false,
-              "name": "video-camera-2",
-              "family": "icon54-v3",
               "active": true,
-              "link": "",
+              "class": "mbr-iconfont mbr-iconfont-header5",
+              "name": "paperclip",
+              "link": "https://mobirise.com",
               "size": 0,
-              "color": "@primaryColor"
+              "color": "@primaryColor",
+              "family": "et-line"
             }
           },
           "media24": {
@@ -320,9 +300,9 @@
               "family": "et-line"
             }
           },
-          "text1": "<b>• Electrical VTX Kill switch - power on and off your vtx via a switch on your radio!<br>• Physical VTX Kill switch - never worry about powering up your quad while others are flying again! Just move the physical switch to the off position, and your VTX will not power on<br>• Ultra clean mounting for TBS Unify VTXs, TBS Crossfire Nano RXs, and Frsky XM RXs<br>• JST SH 9-pin connector and high-quality silicone cable for easy replacement and installation<br>• Solder pads for those who don't like connectors<br>• Vibration Dampening “gummies” to make your electronics last longer - The most common failure for FPV electronics is vibrations and stress in crashes, and gummies significantly reduce both of those! <br>• Convenient solder pads for the camera - Sick of running camera wires across your quad to get all the connections you need? All the camera pads can now be found in one clean location!<br>• Ultra clean component mounting - sick of not having space for your components? The Assassin gives all your components a clean spot while keeping your stack as low as 22mm<br><i>* EXPERIMENTAL TBS “Smart Audio Lite” (Nano Unify Smart Audio) to standard Smart Audio converter</i></b><br>",
-          "text2": "<b>•&nbsp;Specs<br>2-7s LiPo input (max 30v) <br>1.6mm PCB<br>30.5 * 30.5 M3 Mounting Holes<br><br><br>•&nbsp;Supported FC FWs<br>Betaflight  (pinIO)<br>FlightOne v1.2+  (VTXPWRToggle)<br>Butterflight (pinIO)<br>Kiss (Buzzer -, EXPERIMENTAL) <br>FlightOne&nbsp;</b><v1.2 (buzzer=\"\" -,=\"\" experimental)<br=\"\"></v1.2>",
-          "text3": "<b>• Land quad 1<br>Disarm <br>*Quad one will disarm* <br>• Move “quad selector switch (see setup videos) from quad 1 to quad 2” <br>*VTX from quad one gets shut of, and arming is disabled on quad one*  <br>*quad 2s VTX gets turned on, and now your arm switch controls quad 2*<br>• Arm <br>*Quad 2 will arm*<br>#SENDit<br></b><br><i>Easy Sub-1 Second PitStop.</i>",
+          "text1": "My name is olaf blah blah i go to school., i don't do drugs, and I do my HW every day!",
+          "text2": "I was formerly known as Viking FPV but my hero dexFPV told my I was dumb and should change my name to OlafftheSnowMan!",
+          "text3": "By day a kid but by nigh a mad inventor. Ive been intrigued and amzed by electronics since I was in my mother's woomb. I built a walkie talkie so I could communicate with the outside world.",
           "text4": "Publish your website to a local drive, FTP or host on Amazon S3, Google Drive, Github. Don't limit yourself to just one platform or service provider. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nisi, ea. Excepturi dolores, laborum ipsum soluta aliquid, ullam repellat ratione iste harum voluptatem? Alias id blanditiis, sequi possimus dolorem dolorum.",
           "text5": "Create a responsive, touch-swipe slideshow with <a href=\"http://mobirise.com\">Mobirise bootstrap slider</a>. Add images, text, buttons to slides, set autoplay, full-screen, full-width or boxed layout. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sunt, illo quo ipsa. Laboriosam voluptatem sunt nisi velit incidunt labore, sapiente pariatur ipsam fugiat doloremque asperiores eos ipsum, eveniet cum.",
           "text6": "Easily add subscribe and contact forms without any server-side integration. Just link your email to form and get submissions instantly. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium id perspiciatis, sint odit error animi veniam omnis cupiditate distinctio, a quidem deleniti laborum maiores optio laudantium earum vel! Sint, rerum.",
@@ -331,7 +311,7 @@
             "Theme"
           ],
           "_name": "header9",
-          "_anchor": "header9-7"
+          "_anchor": "header9-1"
         },
         {
           "_styles": {
@@ -340,6 +320,9 @@
             },
             ".mbr-section-subtitle": {
               "text-transform": "uppercase"
+            },
+            ".card-number": {
+              "left": "-20px"
             }
           },
           "_params": {
@@ -347,8 +330,8 @@
             "showNumber": false,
             "showTitles": true,
             "showSubtitles": false,
-            "ShowTexts": false,
-            "showButtons": false,
+            "ShowTexts": true,
+            "showButtons": true,
             "imageSize": 50,
             "paddingTop": 2,
             "paddingBottom": 2,
@@ -367,21 +350,23 @@
           },
           "media1": {
             "image": {
-              "src": "@THEME_PATH@/components/_images/notebook/nb11.png",
+              "src": "@THEME_PATH@/components/_images/notebook/nb12.png",
               "class": "card-img-top",
               "width": 600
             },
             "video": {
               "active": true,
-              "src": "https://www.youtube.com/watch?v=CKoc-X_eQio&fbclid=IwAR1jiyrRldUZMdXyC1sReQkZk9a4R-RqX0vqU1n43ehu9KwvHhI3Tm70hRE",
+              "src": "https://www.youtube.com/watch?v=VyfDluu30zw&list=PLlKC8VCuAxc_nGIF1OB9eOyPn2YADA0nn",
               "aspectratio": "16:9",
+              "width": "auto",
+              "height": "auto",
               "autoplay": false,
               "loop": false
             }
           },
-          "title1": "OLAF VTX ASSASIN",
-          "subtitle1": "Bootstrap 4 has been noted",
-          "caption1": "Click on the video for details..",
+          "title1": "Cool video about something nerdy",
+          "subtitle1": "Video about something cool",
+          "caption1": "This is my video section with a youtube playlist. &lt;-- this is not an exclamation mark! &lt;--- but this is.",
           "number1": "1",
           "title2": "Responsive",
           "subtitle2": "One of Bootstrap 4's big points",
@@ -398,53 +383,192 @@
           "title6": "Host Anywhere",
           "subtitle6": "Don't limit yourself to just one platform",
           "caption6": "Publish your website to a local drive, FTP or host on Amazon S3, Google Drive, Github. Don't limit yourself to just one platform or service provider.",
-          "button1": "<a data-app-btn=\"true\" class=\"btn btn-primary-outline\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">learn more</a>",
+          "button1": "<a data-app-btn=\"true\" class=\"btn btn-primary-outline\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\"><span class=\"cm-icon cm-icon-arrowright mbr-iconfont mbr-iconfont-btn\"></span></a>",
           "alias": "colorm/components",
           "_tags": [
             "Theme"
           ],
-          "_name": "features6",
-          "_anchor": "features6-9"
+          "_name": "features5",
+          "_anchor": "features5-3"
         },
         {
           "_styles": {
-            ".btn-social": {
-              "color": "#fff",
-              "height": "60px",
-              "width": "60px",
-              "line-height": "60px",
-              "font-size": "2rem"
-            },
             ".mbr-section-title": {
-              "color": "#fff"
+              "font-weight": "700"
             },
-            ".mbr-section-title I": {
-              "font-size": "60px"
+            ".mbr-section-subtitle": {
+              "text-transform": "uppercase",
+              "letter-spacing": "2px",
+              "color": "#fff"
             }
           },
           "_params": {
-            "paddingTop": "0",
-            "paddingBottom": "0",
+            "showTitle": true,
+            "showImages": true,
+            "showTitles": true,
+            "ShowTexts": true,
+            "showButtons": false,
+            "paddingTop": 2,
+            "paddingBottom": 2,
+            "columns": "4",
             "bgImageRadio": true,
-            "bgImage": "@PROJECT_PATH@/assets/images/logoshort-797x472.png",
+            "bgImage": "@PROJECT_PATH@/assets/images/35972176-421671784910095-3767705741964607488-n-1-1536x2048.jpg",
             "parallax": false,
             "bgColorRadio": false,
-            "bgColor": "#fff",
+            "bgColor": "#2c3e50",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
             "overlay": true,
-            "overlayColor": "#35a0c6",
-            "overlayOpacity": "1",
-            "facebook": true,
-            "twitter": true,
-            "google": false,
-            "vkontakte": false,
-            "odnoklassniki": false
+            "overlayColor": "#2c3e50",
+            "overlayOpacity": 0.9
           },
-          "text": "<i style=\"font-weight: normal;\">SHARE THIS PAGE!</i>",
+          "media1": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/35972176-421671784910095-3767705741964607488-n-2-600x800.jpg",
+              "class": "features-img",
+              "width": 600,
+              "link": "http://pirofliprc.com",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features4",
+              "name": "phone",
+              "link": "https://mobirise.com",
+              "size": 0,
+              "color": "#fff",
+              "family": "et-line"
+            }
+          },
+          "media2": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/36114213-424906231253317-5115656523162320896-n-600x1067.jpg",
+              "class": "features-img",
+              "width": 600,
+              "link": "http://pirofliprc.com",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features4",
+              "name": "edit",
+              "link": "https://mobirise.com",
+              "size": 0,
+              "color": "#fff",
+              "family": "et-line"
+            }
+          },
+          "media3": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/34963127-424259927984614-970088212854734848-n-600x821.jpg",
+              "class": "features-img",
+              "width": 600,
+              "link": "http://pirofliprc.com",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features4",
+              "name": "briefcase",
+              "link": "https://mobirise.com",
+              "size": 0,
+              "color": "#fff",
+              "family": "et-line"
+            }
+          },
+          "media4": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/36137421-424904347920172-4162843313017192448-n-600x338.jpg",
+              "class": "features-img",
+              "width": 600,
+              "link": "http://pirofliprc.com",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features4",
+              "name": "linegraph",
+              "link": "https://mobirise.com",
+              "size": 0,
+              "color": "#fff",
+              "family": "et-line"
+            }
+          },
+          "media5": {
+            "image": {
+              "active": true,
+              "src": "@THEME_PATH@/components/_images/features/05.jpg",
+              "class": "features-img",
+              "width": 600
+            },
+            "iconFont": {
+              "active": false,
+              "class": "mbr-iconfont mbr-iconfont-features4",
+              "name": "briefcase",
+              "link": "https://mobirise.com",
+              "size": 0,
+              "color": "#fff",
+              "family": "et-line"
+            }
+          },
+          "media6": {
+            "image": {
+              "active": true,
+              "src": "@THEME_PATH@/components/_images/features/06.jpg",
+              "class": "features-img",
+              "width": 600
+            },
+            "iconFont": {
+              "active": false,
+              "class": "mbr-iconfont mbr-iconfont-features4",
+              "name": "linegraph",
+              "link": "https://mobirise.com",
+              "size": 0,
+              "color": "#fff",
+              "family": "et-line"
+            }
+          },
+          "title": "Products",
+          "title1": "Bootstrap 4",
+          "subtitle1": "Bootstrap 4 has been noted",
+          "caption1": "Bootstrap 4 has been noted as one of the most reliable and proven frameworks and Mobirise has been equipped to develop websites using this framework.",
+          "buttons1": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary\">learn more</a>",
+          "title2": "Responsive",
+          "subtitle2": "One of Bootstrap 4's big points",
+          "caption2": "One of Bootstrap 4's big points is responsiveness and Mobirise makes effective use of this by generating highly responsive website for you.",
+          "buttons2": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary\">learn more</a>",
+          "title3": "Web Fonts",
+          "subtitle3": "Google has a highly exhaustive list of fonts",
+          "caption3": "Google has a highly exhaustive list of fonts compiled into its web font platform and Mobirise makes it easy for you to use them on your website easily and freely.",
+          "buttons3": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary\">learn more</a>",
+          "title4": "Unlimited Sites",
+          "subtitle4": "dewdwedwe<br>defreedom to develop",
+          "caption4": "&nbsp;you the freedom to develop as many websites as you like given the fact that it is a desktop app.",
+          "buttons4": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary\">learn more</a>",
+          "title5": "Trendy Website Blocks",
+          "subtitle5": "Choose from the large selection of blocks",
+          "caption5": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+          "buttons5": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary\">learn more</a>",
+          "title6": "Host Anywhere",
+          "subtitle6": "Don't limit yourself to just one platform",
+          "caption6": "Publish your website to a local drive, FTP or host on Amazon S3, Google Drive, Github. Don't limit yourself to just one platform or service provider.",
+          "buttons6": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary\">learn more</a>",
+          "alias": "colorm/components",
           "_tags": [
             "Theme"
           ],
-          "_name": "social-buttons1",
-          "_anchor": "social-buttons1-b"
+          "_name": "features1",
+          "_anchor": "features1-4"
         },
         {
           "_styles": {

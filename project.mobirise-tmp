@@ -35,7 +35,9 @@
     "cookiesAlert": "",
     "gdpr": "",
     "google-analytics": "",
-    "sitemapSwitcher": "on"
+    "sitemapSwitcher": "on",
+    "publishType": "local",
+    "publishPath": "file:///Users/aespinoza/Desktop/olaFPV-gh-pages"
   },
   "pages": {
     "test.html": {
@@ -202,7 +204,7 @@
           "tabTitle": "<li class=\"nav-item\" style=\"display: block;\"><a class=\"nav-link active\" role=\"tab\" data-toggle=\"tab\" href=\"#tab1header9-7\" aria-expanded=\"true\">Features</a></li><li class=\"nav-item\" style=\"display: block;\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#tab2header9-7\" aria-expanded=\"false\">Supported Hardware</a></li><li class=\"nav-item\" style=\"display: block;\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#tab3header9-7\" aria-expanded=\"false\">Pit Stop</a></li><li class=\"nav-item\" style=\"display: none\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#tab4header9-7\">Awesome</a></li><li class=\"nav-item\" style=\"display: none\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#tab5header9-7\">Amazing</a></li><li class=\"nav-item\" style=\"display: none\"><a class=\"nav-link\" role=\"tab\" data-toggle=\"tab\" href=\"#tab6header9-7\">Beautiful</a></li>",
           "media11": {
             "image": {
-              "src": "@PROJECT_PATH@/assets/images/45155389-506406193103320-1880775632141418496-o-2016x1512.jpg",
+              "src": "@PROJECT_PATH@/assets/images/45155389_506406193103320_1880775632141418496_o-2016x1512.jpg",
               "class": "card-img-top",
               "active": true,
               "link": "",
@@ -212,7 +214,7 @@
           },
           "media12": {
             "image": {
-              "src": "@PROJECT_PATH@/assets/images/45192611-506406159769990-5457974315825758208-o-1944x1296.jpg",
+              "src": "@PROJECT_PATH@/assets/images/45192611_506406159769990_5457974315825758208_o-1944x1296.jpg",
               "class": "card-img-top",
               "active": true,
               "link": "",
@@ -222,7 +224,7 @@
           },
           "media13": {
             "image": {
-              "src": "@PROJECT_PATH@/assets/images/45105054-506406183103321-7250830292380811264-o-1840x1228.jpg",
+              "src": "@PROJECT_PATH@/assets/images/45105054_506406183103321_7250830292380811264_o-1840x1228.jpg",
               "class": "card-img-top",
               "active": true,
               "link": "",
@@ -232,21 +234,21 @@
           },
           "media14": {
             "image": {
-              "src": "@PROJECT_PATH@/assets/images/nb4.png",
+              "src": "@THEME_PATH@/components/_images/notebook/nb4.png",
               "class": "card-img-top",
               "active": true
             }
           },
           "media15": {
             "image": {
-              "src": "@PROJECT_PATH@/assets/images/nb5.png",
+              "src": "@THEME_PATH@/components/_images/notebook/nb5.png",
               "class": "card-img-top",
               "active": true
             }
           },
           "media16": {
             "image": {
-              "src": "@PROJECT_PATH@/assets/images/nb6.png",
+              "src": "@THEME_PATH@/components/_images/notebook/nb6.png",
               "class": "card-img-top",
               "active": true
             }
