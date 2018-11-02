@@ -143,20 +143,6 @@
           "_anchor": "menu-0"
         },
         {
-          "_params": {
-            "paddingTop": 1,
-            "paddingBottom": 1,
-            "bgColor": "#dddddd"
-          },
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"index.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">DOWNLOAD Spec Sheet</a> ",
-          "alias": "colorm/components",
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "buttons1",
-          "_anchor": "buttons1-8"
-        },
-        {
           "_styles": {
             ".elements-content": {
               "padding-bottom": "50px"
@@ -334,6 +320,20 @@
           ],
           "_name": "header9",
           "_anchor": "header9-7"
+        },
+        {
+          "_params": {
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColor": "#dddddd"
+          },
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"index.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">DOWNLOAD Spec Sheet</a> ",
+          "alias": "colorm/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "buttons1",
+          "_anchor": "buttons1-8"
         },
         {
           "_styles": {
