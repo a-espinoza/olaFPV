@@ -785,6 +785,15 @@ blockquote {
 #menu-0 .dropdown-item[aria-expanded="true"] {
   color: #c0392b!important;
 }
+#call3-c .display-1 {
+  font-weight: 700;
+  color: #fff;
+}
+#call3-c .lead {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
 #header9-7 .elements-content {
   padding-bottom: 50px;
 }
