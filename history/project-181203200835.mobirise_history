@@ -25,7 +25,7 @@
     "path": "@PROJECT_PATH@",
     "siteFonts": [],
     "versionFirst": "4.7.8",
-    "uniqCompNum": 15,
+    "uniqCompNum": 34,
     "versionPublish": "4.8.6",
     "screenshot": "screenshot.png",
     "siteUrl": "http://olafpv.com",
@@ -46,7 +46,7 @@
       "settings": {
         "main": true,
         "title": "Olaf FPV",
-        "meta_descr": "The OlaFPV VTX Assassin is a 30-30 mounting board for your VTX and RX with an integrated “VTX Kill switch”, meaning you can turn your VTX off based off a signal from your FC. This allows for ultra fast pit stops at team races, back to back flight of separate aircraft, and the peace of mind that comes with the ability to power down your vtx, which is often prone to overheating. ",
+        "meta_descr": "",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
@@ -143,47 +143,6 @@
           ],
           "_name": "menu",
           "_anchor": "menu-0"
-        },
-        {
-          "_styles": {
-            ".display-1": {
-              "font-weight": "700",
-              "color": "#fff"
-            },
-            ".lead": {
-              "color": "#fff",
-              "text-transform": "uppercase",
-              "margin-bottom": "0"
-            }
-          },
-          "_params": {
-            "paddingTop": "4",
-            "paddingBottom": "4",
-            "showTitle": true,
-            "showText": false,
-            "showButtons": true,
-            "bgImageRadio": true,
-            "bgImage": "@PROJECT_PATH@/assets/images/bannervtxassasin-01-2-2000x929.jpg",
-            "parallax": true,
-            "bgColorRadio": false,
-            "bgColor": "#e74c3c",
-            "bgVideoRadio": false,
-            "bgVideo": {
-              "url": "https://www.youtube.com/watch?v=HnPYeBJ9JCc"
-            },
-            "overlay": false,
-            "overlayColor": "#e74c3c",
-            "overlayOpacity": 0.9
-          },
-          "title": "<br><br><br>",
-          "text": "Develop fully responsive, mobile-ready websites",
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary btn-lg\" href=\"https://www.pirofliprc.com/OlaFPV-VTX-Assassin_p_6063.html\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">buy noW!</a>",
-          "alias": "colorm/components",
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "call3",
-          "_anchor": "call3-c"
         },
         {
           "_styles": {
@@ -580,7 +539,7 @@
     "oladBoard.html": {
       "settings": {
         "title": "olafBoard",
-        "meta_descr": "The OlaFPV VTX Assassin is a 30-30 mounting board for your VTX and RX with an integrated “VTX Kill switch”, meaning you can turn your VTX off based off a signal from your FC. This allows for ultra fast pit stops at team races, back to back flight of separate aircraft, and the peace of mind that comes with the ability to power down your vtx, which is often prone to overheating. ",
+        "meta_descr": "",
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
@@ -1019,7 +978,7 @@
     "assasin.html": {
       "settings": {
         "title": "assasin",
-        "meta_descr": "The OlaFPV VTX Assassin is a 30-30 mounting board for your VTX and RX with an integrated “VTX Kill switch”, meaning you can turn your VTX off based off a signal from your FC. This allows for ultra fast pit stops at team races, back to back flight of separate aircraft, and the peace of mind that comes with the ability to power down your vtx, which is often prone to overheating. ",
+        "meta_descr": "",
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
@@ -1458,7 +1417,7 @@
     "vtxAssasin.html": {
       "settings": {
         "title": "vtxAssassin",
-        "meta_descr": "The OlaFPV VTX Assassin is a 30-30 mounting board for your VTX and RX with an integrated “VTX Kill switch”, meaning you can turn your VTX off based off a signal from your FC. This allows for ultra fast pit stops at team races, back to back flight of separate aircraft, and the peace of mind that comes with the ability to power down your vtx, which is often prone to overheating. ",
+        "meta_descr": "",
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
