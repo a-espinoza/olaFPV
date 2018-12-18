@@ -840,7 +840,7 @@
       "settings": {
         "title": "pinio1",
         "order": 1,
-        "header_custom": "<script src=\"//onlinegdb.com/embed/js/SkMJwpLlN?theme=dark\"></script>"
+        "header_custom": ""
       },
       "components": [
         {
@@ -939,9 +939,11 @@
           ],
           "_name": "video2",
           "_anchor": "video2-w",
-          "_customHTML": "<section class=\"mbr-section video2 mbr-section__container mbr-after-navbar\" data-rv-view=\"72\" style=\"background-color: rgb(44, 62, 80); padding-top: 100px; padding-bottom: 80px;\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-xs-12\">\n                <div class=\"mbr-figure\">\n                    <div><iframe class=\"mbr-embedded-video\" src=\"https://repl.it/@a_espinoza/dexFPVisTheFastest?lite=true\" width=\"1280\" height=\"720\" frameborder=\"0\" allowfullscreen=\"\"></iframe></div>\n\n                    <div class=\"mbr-figure-caption\">\n                        <div class=\"container mbr-editable-content\" code-editable-id=\"81\">Press Run and then click Enter to run the program!</div>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n",
+          "_customHTML": "\n{JS_CODE_0}\n\n\n\n\n<section class=\"mbr-section video2 mbr-section__container mbr-after-navbar\" data-rv-view=\"72\" style=\"background-color: rgb(44, 62, 80); padding-top: 100px; padding-bottom: 80px;\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-xs-12\">\n                <div class=\"mbr-figure\">\n                    <div><iframe class=\"mbr-embedded-video\" src=\"https://repl.it/@a_espinoza/dexFPVisTheFastest?lite=true\" width=\"1280\" height=\"720\" frameborder=\"0\" allowfullscreen=\"\"></iframe></div>\n\n                    <div class=\"mbr-figure-caption\">\n                        <div class=\"container mbr-editable-content\" code-editable-id=\"91\">Press Run and then click Enter to run the program!</div>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n",
           "_PHPplaceholders": [],
-          "_JSplaceholders": [],
+          "_JSplaceholders": [
+            "<script>\nfunction myFunction() {\n  alert(\"PRESS RUN in the top to start the program!\");\n}\n</script>"
+          ],
           "_customCSS": "",
           "_customTemplate": true
         }
