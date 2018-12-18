@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "olaFPV",
-    "currentPage": "page1.html",
+    "currentPage": "pinio.html",
     "theme": {
       "name": "colorm",
       "title": "ColorM",
@@ -836,7 +836,7 @@
         }
       ]
     },
-    "page1.html": {
+    "pinio.html": {
       "settings": {
         "title": "pinio1",
         "order": 1,
@@ -1002,7 +1002,7 @@
           ],
           "_name": "header7",
           "_anchor": "header7-v",
-          "_customHTML": "<section class=\"mbr-section mbr-section-hero mbr-section-full header7 mbr-after-navbar\" data-rv-view=\"69\" style=\"background-color: rgb(236, 240, 241);\">\n\n    \n\n    <div class=\"mbr-table-cell\">\n\n        <div class=\"container-fluid\">\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-md-6 col-lg-5 col-lg-offset-1 text-xs-left content-size\">\n\n                    <p class=\"mbr-section-subtitle lead subtitle mbr-editable-content\" code-editable-id=\"54\"></p>\n\n                    <h1 class=\"mbr-section-title display-1 mbr-editable-content\" code-editable-id=\"55\">Follow the easy instructions inside the console!</h1>\n                    <p class=\"mbr-section-text lead mbr-editable-content\" code-editable-id=\"56\">Stop second guessing your PinIO layout, here is a quick program to help you run your setup ASAP!</p>\n                    \n                </div>\n\n                <div class=\"col-xs-12 col-md-6 padding-left-0 padding-right-0 image-size\">\n                    <div class=\"mbr-figure\">\n<iframe height=\"900px%\" width=\"100%\" src=\"https://repl.it/@a_espinoza/NonstopDapperJavabytecode?lite=true\" scrolling=\"no\" frameborder=\"no\" allowtransparency=\"true\" allowfullscreen=\"true\" sandbox=\"allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals\"></iframe>&gt;</div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    \n\n</section>",
+          "_customHTML": "<section class=\"mbr-section mbr-section-hero mbr-section-full header7 mbr-after-navbar\" data-rv-view=\"69\" style=\"background-color: rgb(236, 240, 241);\">\n\n    \n\n    <div class=\"mbr-table-cell\">\n\n        <div class=\"container-fluid\">\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-md-6 col-lg-5 col-lg-offset-1 text-xs-left content-size\">\n\n                    <p class=\"mbr-section-subtitle lead subtitle mbr-editable-content\" code-editable-id=\"60\"></p>\n\n                    <h1 class=\"mbr-section-title display-1 mbr-editable-content\" code-editable-id=\"61\">Follow the easy instructions inside the console!</h1>\n                    <p class=\"mbr-section-text lead mbr-editable-content\" code-editable-id=\"62\">Stop second guessing your PinIO layout, here is a quick program to help you run your setup ASAP!</p>\n                    \n                </div>\n\n                <div class=\"col-xs-12 col-md-6 padding-left-0 padding-right-0 image-size\">\n                    <div class=\"mbr-figure\">\n<iframe height=\"900px%\" width=\"100%\" src=\"https://repl.it/@a_espinoza/NonstopDapperJavabytecode?lite=true\" scrolling=\"no\" frameborder=\"no\" allowtransparency=\"true\" allowfullscreen=\"true\" sandbox=\"allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals\"></iframe>&gt;</div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    \n\n</section>",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
           "_customCSS": ".mbr-section-subtitle {\n  text-transform: uppercase;\n  color: #9fa3a7;\n}\n.mbr-section-text {\n  color: #9fa3a7;\n}\n.mbr-section-title {\n  color: #242424;\n  font-weight: bold;\n}\n",
