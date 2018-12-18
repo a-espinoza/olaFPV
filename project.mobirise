@@ -25,7 +25,7 @@
     "path": "@PROJECT_PATH@",
     "siteFonts": [],
     "versionFirst": "4.7.8",
-    "uniqCompNum": 31,
+    "uniqCompNum": 32,
     "versionPublish": "4.8.6",
     "screenshot": "screenshot.png",
     "siteUrl": "http://olafpv.com",
@@ -965,32 +965,48 @@
           "_anchor": "footer2-r"
         },
         {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<!-- Type valid HTML here -->\n<img class=\"my-image\" src=\"@PROJECT_PATH@/assets/images/code-editor-placeholder.jpg\">",
-          "_customCSS": "/* Type valid CSS here */\n.my-image {\n  width: 100%;\n}",
-          "alias": "code-editor",
+          "_params": {
+            "showTitle": true,
+            "showSubtitle": true,
+            "showText": true,
+            "showButtons": false,
+            "showArrow": false,
+            "bgImageRadio": false,
+            "bgImage": "@THEME_PATH@/components/_images/header/01.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#ecf0f1",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=HnPYeBJ9JCc"
+            },
+            "overlay": true,
+            "overlayColor": "#ecf0f1",
+            "overlayOpacity": 0.9
+          },
+          "arrowDown": "@THEME_PATH@/components/_images/header/arrowDown.png",
+          "media": {
+            "image": {
+              "src": "@THEME_PATH@/components/_images/features/03.jpg",
+              "class": "",
+              "active": true
+            }
+          },
+          "title": "Follow the easy instructions inside the console!",
+          "subtitle": "mobirise builder",
+          "text": "Stop second guessing your PinIO layout, here is a quick program to help you run your setup ASAP!",
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">learn more</a>",
+          "alias": "colorm/components",
           "_tags": [
-            "Extension"
+            "Theme"
           ],
-          "_name": "pro.custom-html",
-          "_anchor": "custom-html-t"
-        },
-        {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "{JS_CODE_0}",
-          "_customCSS": "/* Type valid CSS here */\n.my-image {\n  width: 100%;\n}",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_anchor": "custom-html-u",
+          "_name": "header7",
+          "_anchor": "header7-v",
+          "_customHTML": "<section class=\"mbr-section mbr-section-hero mbr-section-full header7 mbr-after-navbar\" data-rv-view=\"69\" style=\"background-color: rgb(236, 240, 241);\">\n\n    \n\n    <div class=\"mbr-table-cell\">\n\n        <div class=\"container-fluid\">\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-md-6 col-lg-5 col-lg-offset-1 text-xs-left content-size\">\n\n                    <p class=\"mbr-section-subtitle lead subtitle mbr-editable-content\" code-editable-id=\"54\"></p>\n\n                    <h1 class=\"mbr-section-title display-1 mbr-editable-content\" code-editable-id=\"55\">Follow the easy instructions inside the console!</h1>\n                    <p class=\"mbr-section-text lead mbr-editable-content\" code-editable-id=\"56\">Stop second guessing your PinIO layout, here is a quick program to help you run your setup ASAP!</p>\n                    \n                </div>\n\n                <div class=\"col-xs-12 col-md-6 padding-left-0 padding-right-0 image-size\">\n                    <div class=\"mbr-figure\">\n<iframe height=\"900px%\" width=\"100%\" src=\"https://repl.it/@a_espinoza/NonstopDapperJavabytecode?lite=true\" scrolling=\"no\" frameborder=\"no\" allowtransparency=\"true\" allowfullscreen=\"true\" sandbox=\"allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals\"></iframe>&gt;</div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    \n\n</section>",
           "_PHPplaceholders": [],
-          "_JSplaceholders": [
-            "<script src=\"//onlinegdb.com/embed/js/SkMJwpLlN?theme=dark\"></script>"
-          ]
+          "_JSplaceholders": [],
+          "_customCSS": ".mbr-section-subtitle {\n  text-transform: uppercase;\n  color: #9fa3a7;\n}\n.mbr-section-text {\n  color: #9fa3a7;\n}\n.mbr-section-title {\n  color: #242424;\n  font-weight: bold;\n}\n",
+          "_customTemplate": true
         }
       ]
     }
