@@ -13,23 +13,17 @@
         "infoColor": "#3498db",
         "warningColor": "#f1c40f",
         "dangerColor": "#e74c3c",
-        "titleFont": "Contrail One",
-        "subtitleFont": "Contrail One",
-        "textFont": "Contrail One",
+        "titleFont": "Arvo",
+        "subtitleFont": "Montserrat",
+        "textFont": "Open Sans",
         "isRoundedButtons": true,
         "isAnimatedOnScroll": true,
-        "isScrollToTopButton": true
+        "isScrollToTopButton": false
       },
       "additionalSetColors": []
     },
     "path": "@PROJECT_PATH@",
-    "siteFonts": [
-      {
-        "css": "'Contrail One', display",
-        "name": "Contrail One",
-        "url": "https://fonts.googleapis.com/css?family=Contrail+One:400"
-      }
-    ],
+    "siteFonts": [],
     "versionFirst": "4.7.8",
     "uniqCompNum": 16,
     "versionPublish": "4.8.6",
@@ -236,8 +230,8 @@
             "ShowTexts": false,
             "showButtons": false,
             "imageSize": 50,
-            "paddingTop": "3",
-            "paddingBottom": "3",
+            "paddingTop": "1",
+            "paddingBottom": "1",
             "bgImageRadio": false,
             "bgImage": "@THEME_PATH@/components/_images/features/05.jpg",
             "parallax": true,
@@ -473,6 +467,79 @@
           ],
           "_name": "header9",
           "_anchor": "header9-7"
+        },
+        {
+          "_styles": {
+            ".lead": {
+              "color": "#9fa3a7"
+            },
+            ".mbr-section-subtitle": {
+              "text-transform": "uppercase"
+            }
+          },
+          "_params": {
+            "showImages": true,
+            "showNumber": true,
+            "showTitles": true,
+            "showSubtitles": true,
+            "ShowTexts": false,
+            "showButtons": false,
+            "imageSize": "46",
+            "paddingTop": "1",
+            "paddingBottom": "1",
+            "bgImageRadio": false,
+            "bgImage": "@THEME_PATH@/components/_images/features/05.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#bdc3c7",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": true,
+            "overlayColor": "#ecf0f1",
+            "overlayOpacity": 0.9
+          },
+          "media1": {
+            "image": {
+              "src": "@THEME_PATH@/components/_images/notebook/nb11.png",
+              "class": "card-img-top",
+              "width": 600
+            },
+            "video": {
+              "active": true,
+              "src": "https://www.youtube.com/watch?v=yvvSWkQXjTU&feature=youtu.be&fbclid=IwAR36fOhVUMpYdTP8nyoWAPJcIOutIi6sAwoxmyxR2Tg1aA_16q7ug_tCTQc",
+              "aspectratio": "16:9",
+              "autoplay": false,
+              "loop": false
+            }
+          },
+          "title1": "VTX ASSASIN Review",
+          "subtitle1": "FEATURED VIDEO",
+          "caption1": "",
+          "number1": "1",
+          "title2": "Responsive",
+          "subtitle2": "One of Bootstrap 4's big points",
+          "caption2": "One of Bootstrap 4's big points is responsiveness and Mobirise makes effective use of this by generating highly responsive website for you.",
+          "title3": "Web Fonts",
+          "subtitle3": "Google has a highly exhaustive list of fonts",
+          "caption3": "Google has a highly exhaustive list of fonts compiled into its web font platform and Mobirise makes it easy for you to use them on your website easily and freely.",
+          "title4": "Unlimited Sites",
+          "subtitle4": "Mobirise gives you the freedom to develop",
+          "caption4": "Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.",
+          "title5": "Trendy Website Blocks",
+          "subtitle5": "Choose from the large selection of blocks",
+          "caption5": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+          "title6": "Host Anywhere",
+          "subtitle6": "Don't limit yourself to just one platform",
+          "caption6": "Publish your website to a local drive, FTP or host on Amazon S3, Google Drive, Github. Don't limit yourself to just one platform or service provider.",
+          "button1": "<a data-app-btn=\"true\" class=\"btn btn-primary-outline\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">learn more</a>",
+          "alias": "colorm/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "features6",
+          "_anchor": "features6-f"
         },
         {
           "_styles": {},
