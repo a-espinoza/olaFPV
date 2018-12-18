@@ -25,7 +25,7 @@
     "path": "@PROJECT_PATH@",
     "siteFonts": [],
     "versionFirst": "4.7.8",
-    "uniqCompNum": 32,
+    "uniqCompNum": 33,
     "versionPublish": "4.8.6",
     "screenshot": "screenshot.png",
     "siteUrl": "http://olafpv.com",
@@ -844,60 +844,6 @@
       },
       "components": [
         {
-          "_styles": {
-            ".hide-buttons .nav-btn": {
-              "display": "none !important"
-            },
-            ".navbar-caption": {
-              "color": "#ffffff"
-            },
-            ".navbar-toggler": {
-              "color": "#3498db"
-            },
-            ".close-icon::before, .close-icon::after": {
-              "background-color": "#3498db"
-            },
-            ".link, .dropdown-item": {
-              "color": "#3498db"
-            },
-            ".link": {
-              "font-size": "0.875rem"
-            },
-            ".dropdown-item, .nav-dropdown-sm .link": {
-              "font-size": "0.948rem"
-            },
-            ".link:hover, .link:focus": {
-              "color": "@primaryColor"
-            },
-            ".dropdown-item:hover::before, .dropdown-item:focus::before": {
-              "background": "@primaryColor"
-            },
-            ".dropdown-item:hover, .dropdown-item:focus": {
-              "color": "#3498db"
-            },
-            ".link[aria-expanded=\"true\"], .dropdown-menu": {
-              "background": "#1a242f"
-            },
-            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
-              "background": "#273646!important"
-            },
-            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
-              "background": "#2c3e50"
-            },
-            ".bg-color.transparent .link": {
-              "color": "#3498db",
-              "transition": "none"
-            },
-            ".bg-color.transparent.opened .link": {
-              "transition": "color .2s ease-in-out"
-            },
-            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
-              "color": "@primaryColor"
-            },
-            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
-              "color": "#c0392b!important"
-            }
-          },
           "_params": {
             "logo": true,
             "showBrand": false,
@@ -933,7 +879,12 @@
             "Theme"
           ],
           "_name": "menu",
-          "_anchor": "menu-q"
+          "_anchor": "menu-q",
+          "_customHTML": "<section class=\"menu1\" data-rv-view=\"63\">\n\n    <nav class=\"navbar navbar-dropdown\">\n        <div class=\"container-fluid\">\n\n            <div class=\"mbr-table\">\n                <div class=\"mbr-table-cell\">\n\n                    <div class=\"navbar-brand\">\n                        <a href=\"#top\" class=\"navbar-logo\"><img src=\"@PROJECT_PATH@/assets/images/logoshortwhite-234x128.png\" alt=\"Mobirise\"></a>\n                        \n                    </div>\n\n                </div>\n                <div class=\"mbr-table-cell\">\n\n                    <button class=\"navbar-toggler pull-xs-right hidden-md-up\" type=\"button\" data-toggle=\"collapse\" data-target=\"#exCollapsingNavbar\">\n                        <span class=\"hamburger-icon\"></span>\n                    </button>\n\n                    <ul class=\"nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm\" id=\"exCollapsingNavbar\"><li class=\"nav-item\"><a class=\"nav-link link mbr-editable-menu-item\" href=\"#top\" code-editable-id=\"78\">HOME</a></li><li class=\"nav-item\"><a class=\"nav-link link mbr-editable-menu-item\" href=\"http://www.m.me/olaffpv\" aria-expanded=\"false\" target=\"_blank\" code-editable-id=\"79\">Contact Me</a></li></ul>\n                    <button hidden=\"\" class=\"navbar-toggler navbar-close\" type=\"button\" data-toggle=\"collapse\" data-target=\"#exCollapsingNavbar\">\n                        <span class=\"close-icon\"></span>\n                    </button>\n\n                </div>\n            </div>\n\n        </div>\n    </nav>\n\n</section>",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_customCSS": ".hide-buttons .nav-btn {\n  display: none !important;\n}\n.navbar-caption {\n  color: #ffffff;\n}\n.navbar-toggler {\n  color: #3498db;\n}\n.close-icon::before, .close-icon::after {\n  background-color: #3498db;\n}\n.link, .dropdown-item {\n  color: #3498db;\n}\n.link {\n  font-size: 0.875rem;\n}\n.dropdown-item, .nav-dropdown-sm .link {\n  font-size: 0.948rem;\n}\n.link:hover, .link:focus {\n  color: #c0392b;\n}\n.dropdown-item:hover::before, .dropdown-item:focus::before {\n  background: #c0392b;\n}\n.dropdown-item:hover, .dropdown-item:focus {\n  color: #3498db;\n}\n.link[aria-expanded=\"true\"], .dropdown-menu {\n  background: #1a242f;\n}\n.nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover {\n  background: #273646!important;\n}\n.navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu {\n  background: #2c3e50;\n}\n.bg-color.transparent .link {\n  color: #3498db;\n  transition: none;\n}\n.bg-color.transparent.opened .link {\n  transition: color .2s ease-in-out;\n}\n.bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus {\n  color: #c0392b;\n}\n.link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"] {\n  color: #c0392b!important;\n}\n",
+          "_customTemplate": true
         },
         {
           "_styles": {
@@ -966,46 +917,32 @@
         },
         {
           "_params": {
-            "showTitle": true,
-            "showSubtitle": true,
             "showText": true,
-            "showButtons": false,
-            "showArrow": false,
-            "bgImageRadio": false,
-            "bgImage": "@THEME_PATH@/components/_images/header/01.jpg",
-            "parallax": true,
-            "bgColorRadio": true,
-            "bgColor": "#ecf0f1",
-            "bgVideoRadio": false,
-            "bgVideo": {
-              "url": "https://www.youtube.com/watch?v=HnPYeBJ9JCc"
-            },
-            "overlay": true,
-            "overlayColor": "#ecf0f1",
-            "overlayOpacity": 0.9
+            "paddingTop": "5",
+            "paddingBottom": 4,
+            "bgColor": "#2c3e50"
           },
-          "arrowDown": "@THEME_PATH@/components/_images/header/arrowDown.png",
           "media": {
             "image": {
-              "src": "@THEME_PATH@/components/_images/features/03.jpg",
-              "class": "",
-              "active": true
+              "src": "@THEME_PATH@/components/_images/image1.jpg",
+              "width": 1400
+            },
+            "video": {
+              "active": true,
+              "class": "mbr-embedded-video",
+              "src": "https://www.youtube.com/embed/Tq7p44IA-1U"
             }
           },
-          "title": "Follow the easy instructions inside the console!",
-          "subtitle": "mobirise builder",
-          "text": "Stop second guessing your PinIO layout, here is a quick program to help you run your setup ASAP!",
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">learn more</a>",
-          "alias": "colorm/components",
+          "text": "Press Run and then click Enter to run the program!",
           "_tags": [
             "Theme"
           ],
-          "_name": "header7",
-          "_anchor": "header7-v",
-          "_customHTML": "<section class=\"mbr-section mbr-section-hero mbr-section-full header7 mbr-after-navbar\" data-rv-view=\"69\" style=\"background-color: rgb(236, 240, 241);\">\n\n    \n\n    <div class=\"mbr-table-cell\">\n\n        <div class=\"container-fluid\">\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-md-6 col-lg-5 col-lg-offset-1 text-xs-left content-size\">\n\n                    <p class=\"mbr-section-subtitle lead subtitle mbr-editable-content\" code-editable-id=\"60\"></p>\n\n                    <h1 class=\"mbr-section-title display-1 mbr-editable-content\" code-editable-id=\"61\">Follow the easy instructions inside the console!</h1>\n                    <p class=\"mbr-section-text lead mbr-editable-content\" code-editable-id=\"62\">Stop second guessing your PinIO layout, here is a quick program to help you run your setup ASAP!</p>\n                    \n                </div>\n\n                <div class=\"col-xs-12 col-md-6 padding-left-0 padding-right-0 image-size\">\n                    <div class=\"mbr-figure\">\n<iframe height=\"900px%\" width=\"100%\" src=\"https://repl.it/@a_espinoza/NonstopDapperJavabytecode?lite=true\" scrolling=\"no\" frameborder=\"no\" allowtransparency=\"true\" allowfullscreen=\"true\" sandbox=\"allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals\"></iframe>&gt;</div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    \n\n</section>",
+          "_name": "video2",
+          "_anchor": "video2-w",
+          "_customHTML": "<section class=\"mbr-section video2 mbr-section__container mbr-after-navbar\" data-rv-view=\"72\" style=\"background-color: rgb(44, 62, 80); padding-top: 100px; padding-bottom: 80px;\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-xs-12\">\n                <div class=\"mbr-figure\">\n                    <div><iframe class=\"mbr-embedded-video\" src=\"https://repl.it/@a_espinoza/dexFPVisTheFastest?lite=true\" width=\"1280\" height=\"720\" frameborder=\"0\" allowfullscreen=\"\"></iframe></div>\n\n                    <div class=\"mbr-figure-caption\">\n                        <div class=\"container mbr-editable-content\" code-editable-id=\"81\">Press Run and then click Enter to run the program!</div>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
-          "_customCSS": ".mbr-section-subtitle {\n  text-transform: uppercase;\n  color: #9fa3a7;\n}\n.mbr-section-text {\n  color: #9fa3a7;\n}\n.mbr-section-title {\n  color: #242424;\n  font-weight: bold;\n}\n",
+          "_customCSS": "",
           "_customTemplate": true
         }
       ]
