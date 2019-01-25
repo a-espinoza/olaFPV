@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Olaf's Borrowed PinIO</title>
+    <link rel="stylesheet" href="bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70686549-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-70686549-5');
+    </script>
+
+    <script type="text/javascript">
+      function checkTextArea(){
+        if (document.getElementById("resource-dump").value.length != 0){
+          document.getElementById("resource-button").classList.add("is-success");
+          document.getElementById("resource-button").disabled = false;
+        }else{
+          document.getElementById("resource-button").classList.remove("is-success");
+          document.getElementById("resource-button").disabled = true;;
+        }
+      }
+
+      function parseResDump(){
+        var rawDump = document.getElementById("resource-dump").value.split('\n');
+        var dump = [];
+        for (var i = 0; i < rawDump.length; i++) {
+          var res = rawDump[i];
+          if (res.startsWith("resource ") && !res.endsWith("NONE")){
+            var trimmed = res.slice(9)
+            dump.push(trimmed);
+            for (var j = 1; j <= 4; j++){
+              var option = document.createElement("option");
+              option.text = trimmed.slice(0, (trimmed.length - 4));
+              option.value = trimmed.slice(trimmed.length - 3);
+              document.getElementById("pin"+j+"-pin").add(option);
+            }
+          }
+        }
+      }
+
+      function updateMode(pin){
+        if(document.getElementById("pin"+pin+"-pin").value == "0"){
+          document.getElementById("pin"+pin+"-mode").disabled = true;
+        }else{
+          document.getElementById("pin"+pin+"-mode").disabled = false;
+        }
+      }
+
+      function verifySets(pin){
+        var good = true;
+        if (document.getElementById("pin"+pin+"-pin").value != "0" && document.getElementById("pin"+pin+"-mode").value == "select"){
+            good = false;
+        }
+        for (var i = 1; i <= 4; i++){
+          if (i != pin){
+            if(document.getElementById("pin"+pin+"-pin").value == document.getElementById("pin"+i+"-pin").value){
+              good = false;
+            }
+          }
+        }
+        if (good){
+          document.getElementById("generate-cli-button").classList.add("is-success");
+          document.getElementById("generate-cli-button").disabled = false;
+        }else{
+          document.getElementById("generate-cli-button").classList.remove("is-success");
+          document.getElementById("generate-cli-button").disabled = true;;
+        }
+      }
+
+      function generateCLI(){
+        document.getElementById("output").value = "";
+        var commands = [];
+        var box = [];
+        for (var i = 1; i <= 4; i++){
+          var pinNameObj = document.getElementById("pin"+i+"-pin");
+          var pinName = pinNameObj.options[pinNameObj.selectedIndex].text;
+          var pinNum = document.getElementById("pin"+i+"-pin").value;
+          var pinMode = document.getElementById("pin"+i+"-mode").value;
+          if (pinNum != "0"){
+            commands.push("resource " + pinName + " NONE");
+            commands.push("resource PINIO " + i + " " + pinNum);
+            box.push(pinMode);
+          } else{
+            box.push("-1");
+          }
+        }
+        commands.push("set pinio_box = " + box[0] + "," + box[1] + "," + box[2] + "," + box[3]);
+        commands.push("save");
+        for (var i = 0; i < commands.length; i++) {
+          document.getElementById("output").value += (commands[i] + "\n");
+        }
+      }
+
+    </script>
+  </head>
+
+
+  <body>
+  <div class="container">
+    <section class="section">
+      <div class="block">
+        <h1 class="title is-1">Bicks's PinIO Setup Wizard</h1>
+        <h4 class="subtitle is-4">
+          A configuration utility for the 
+          <a href="https://store.bicks.us/home/20-bicks-s-multiview-duo-fpv-camera-switcher.html">MultiView</a>, <a href="https://store.bicks.us/home/24-olafpv-vtx-assassin.html">VTX Assassin</a>, or any other PinIO device.</h4>
+      </div>
+
+      <div class="block">
+        <div class="message">
+          <div class="message-header">
+            <p>Resource Dump</p>
+          </div>
+          <div class="message-body">
+            <div class="block">
+              <p class="content">Type <code>resource</code> in your BetaFlight / CleanFlight compatible CLI, and paste the results in the box below.</p>
+              <textarea id="resource-dump" class="textarea content" style="height:220px; font-family: 'Roboto Mono', monospace; line-height: 1em;" oninput="checkTextArea()" spellcheck="false"></textarea>
+              <button id="resource-button" class="button" onclick="parseResDump()" disabled>Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="message">
+          <div class="message-header">
+            <p>PinIO Configuration</p>
+          </div>
+          <div class="message-body">
+            <div class="block box">
+              <h3 class="title is-4">PinIO 1:</h3>
+              <div class="field">
+                <label class="label">FC Pin:</label>
+                <div class="select">
+                  <select id="pin1-pin" class="pin-select" onChange="updateMode(1); verifySets(1);">
+                    <option selected value="0">Disabled</option>
+                  </select>
+                </div>
+                <p class="help">This is the pin on your FC that your device is wired to.</p>
+              </div>
+              <div class="field">
+                <label class="label">Activate with:</label>
+                <div class="select">
+                  <select id="pin1-mode" onChange="verifySets(1);" disabled>
+                    <option disabled selected style="display:none" value="select">Select One</option>
+                    <option value="40">User 1</option>
+                    <option value="41">User 2</option>
+                    <option value="42">User 3</option>
+                    <option value="43">User 4</option>
+                    <option value="0">Arm</option>
+                    <option value="1">Angle</option>
+                    <option value="2">Horizon</option>
+                    <option value="3">Anti-gravity</option>
+                    <option value="4">Heading lock (MAG)</option>
+                    <option value="6">Head free</option>
+                    <option value="7">Heading adjust</option>
+                    <option value="8">Camera stabilization</option>
+                    <option value="12">Passthrough</option>
+                    <option value="13">Beeper on</option>
+                    <option value="15">Disable LEDs (LEDLOW)</option>
+                    <option value="17">Calibration</option>
+                    <option value="19">OSD Enable</option>
+                    <option value="20">Telemetry Enable</option>
+                    <option value="23">Servo 1</option>
+                    <option value="24">Servo 2</option>
+                    <option value="25">Servo 3</option>
+                    <option value="26">Blackbox enable</option>
+                    <option value="27">Failsafe</option>
+                    <option value="28">Airmode</option>
+                    <option value="29">3D Mode</option>
+                    <option value="30">FPV Angle Mix</option>
+                    <option value="31">Blackbox erase</option>
+                    <option value="32">Camera Control 1</option>
+                    <option value="33">Camera Control 2</option>
+                    <option value="34">Camera Control 3</option>
+                    <option value="35">Turtle mode</option>
+                    <option value="36">Prearm</option>
+                    <option value="37">Beep # of satellites</option>
+                    <option value="39">VTX Pit Mode</option>
+                    <option value="44">PID Audio</option>
+                    <option value="45">Paralyze</option>
+                    <option value="46">GPS Rescue</option>
+                    <option value="47">Acro Trainer</option>
+                  </select>
+                </div>
+                <p class="help">When the above mode (as configured in the modes tab of your configurator) is activated, your PinIO device will activate. To bind the PinIO device to a custom mode, choose User 1-4</p>
+              </div>
+            </div>
+            <div class="block box">
+              <h3 class="title is-4">PinIO 2:</h3>
+              <div class="field">
+                <label class="label">FC Pin:</label>
+                <div class="select">
+                  <select id="pin2-pin" class="pin-select" onChange="updateMode(2); verifySets(2);">
+                    <option selected value="0">Disabled</option>
+                    
+                  </select>
+                </div>
+                <p class="help">This is the pin on your FC that your device is wired to.</p>
+              </div>
+              <div class="field">
+                <label class="label">Activate with:</label>
+                <div class="select">
+                  <select id="pin2-mode" onChange="verifySets(2);" disabled>
+                    <option disabled selected style="display:none" value="select">Select One</option>
+                    <option value="40">User 1</option>
+                    <option value="41">User 2</option>
+                    <option value="42">User 3</option>
+                    <option value="43">User 4</option>
+                    <option value="0">Arm</option>
+                    <option value="1">Angle</option>
+                    <option value="2">Horizon</option>
+                    <option value="3">Anti-gravity</option>
+                    <option value="4">Heading lock (MAG)</option>
+                    <option value="6">Head free</option>
+                    <option value="7">Heading adjust</option>
+                    <option value="8">Camera stabilization</option>
+                    <option value="12">Passthrough</option>
+                    <option value="13">Beeper on</option>
+                    <option value="15">Disable LEDs (LEDLOW)</option>
+                    <option value="17">Calibration</option>
+                    <option value="19">OSD Enable</option>
+                    <option value="20">Telemetry Enable</option>
+                    <option value="23">Servo 1</option>
+                    <option value="24">Servo 2</option>
+                    <option value="25">Servo 3</option>
+                    <option value="26">Blackbox enable</option>
+                    <option value="27">Failsafe</option>
+                    <option value="28">Airmode</option>
+                    <option value="29">3D Mode</option>
+                    <option value="30">FPV Angle Mix</option>
+                    <option value="31">Blackbox erase</option>
+                    <option value="32">Camera Control 1</option>
+                    <option value="33">Camera Control 2</option>
+                    <option value="34">Camera Control 3</option>
+                    <option value="35">Turtle mode</option>
+                    <option value="36">Prearm</option>
+                    <option value="37">Beep # of satellites</option>
+                    <option value="39">VTX Pit Mode</option>
+                    <option value="44">PID Audio</option>
+                    <option value="45">Paralyze</option>
+                    <option value="46">GPS Rescue</option>
+                    <option value="47">Acro Trainer</option>
+                  </select>
+                </div>
+                <p class="help">When the above mode (as configured in the modes tab of your configurator) is activated, your PinIO device will activate. To bind the PinIO device to a custom mode, choose User 1-4</p>
+              </div>
+            </div>
+            <div class="block box">
+              <h3 class="title is-4">PinIO 3:</h3>
+              <div class="field">
+                <label class="label">FC Pin:</label>
+                <div class="select">
+                  <select id="pin3-pin" class="pin-select" onChange="updateMode(3); verifySets(3);">
+                    <option selected value="0">Disabled</option>
+                    
+                  </select>
+                </div>
+                <p class="help">This is the pin on your FC that your device is wired to.</p>
+              </div>
+              <div class="field">
+                <label class="label">Activate with:</label>
+                <div class="select">
+                  <select id="pin3-mode" onChange="verifySets(3);" disabled>
+                    <option disabled selected style="display:none" value="select">Select One</option>
+                    <option value="40">User 1</option>
+                    <option value="41">User 2</option>
+                    <option value="42">User 3</option>
+                    <option value="43">User 4</option>
+                    <option value="0">Arm</option>
+                    <option value="1">Angle</option>
+                    <option value="2">Horizon</option>
+                    <option value="3">Anti-gravity</option>
+                    <option value="4">Heading lock (MAG)</option>
+                    <option value="6">Head free</option>
+                    <option value="7">Heading adjust</option>
+                    <option value="8">Camera stabilization</option>
+                    <option value="12">Passthrough</option>
+                    <option value="13">Beeper on</option>
+                    <option value="15">Disable LEDs (LEDLOW)</option>
+                    <option value="17">Calibration</option>
+                    <option value="19">OSD Enable</option>
+                    <option value="20">Telemetry Enable</option>
+                    <option value="23">Servo 1</option>
+                    <option value="24">Servo 2</option>
+                    <option value="25">Servo 3</option>
+                    <option value="26">Blackbox enable</option>
+                    <option value="27">Failsafe</option>
+                    <option value="28">Airmode</option>
+                    <option value="29">3D Mode</option>
+                    <option value="30">FPV Angle Mix</option>
+                    <option value="31">Blackbox erase</option>
+                    <option value="32">Camera Control 1</option>
+                    <option value="33">Camera Control 2</option>
+                    <option value="34">Camera Control 3</option>
+                    <option value="35">Turtle mode</option>
+                    <option value="36">Prearm</option>
+                    <option value="37">Beep # of satellites</option>
+                    <option value="39">VTX Pit Mode</option>
+                    <option value="44">PID Audio</option>
+                    <option value="45">Paralyze</option>
+                    <option value="46">GPS Rescue</option>
+                    <option value="47">Acro Trainer</option>
+                  </select>
+                </div>
+                <p class="help">When the above mode (as configured in the modes tab of your configurator) is activated, your PinIO device will activate. To bind the PinIO device to a custom mode, choose User 1-4</p>
+              </div>
+            </div>
+            <div class="block box">
+              <h3 class="title is-4">PinIO 4:</h3>
+              <div class="field">
+                <label class="label">FC Pin:</label>
+                <div class="select">
+                  <select id="pin4-pin" class="pin-select" onChange="updateMode(4); verifySets(4);">
+                    <option selected value="0">Disabled</option>
+                    
+                  </select>
+                </div>
+                <p class="help">This is the pin on your FC that your device is wired to.</p>
+              </div>
+              <div class="field">
+                <label class="label">Activate with:</label>
+                <div class="select">
+                  <select id="pin4-mode" onChange="verifySets(4);" disabled>
+                    <option disabled selected style="display:none" value="select">Select One</option>
+                    <option value="40">User 1</option>
+                    <option value="41">User 2</option>
+                    <option value="42">User 3</option>
+                    <option value="43">User 4</option>
+                    <option value="0">Arm</option>
+                    <option value="1">Angle</option>
+                    <option value="2">Horizon</option>
+                    <option value="3">Anti-gravity</option>
+                    <option value="4">Heading lock (MAG)</option>
+                    <option value="6">Head free</option>
+                    <option value="7">Heading adjust</option>
+                    <option value="8">Camera stabilization</option>
+                    <option value="12">Passthrough</option>
+                    <option value="13">Beeper on</option>
+                    <option value="15">Disable LEDs (LEDLOW)</option>
+                    <option value="17">Calibration</option>
+                    <option value="19">OSD Enable</option>
+                    <option value="20">Telemetry Enable</option>
+                    <option value="23">Servo 1</option>
+                    <option value="24">Servo 2</option>
+                    <option value="25">Servo 3</option>
+                    <option value="26">Blackbox enable</option>
+                    <option value="27">Failsafe</option>
+                    <option value="28">Airmode</option>
+                    <option value="29">3D Mode</option>
+                    <option value="30">FPV Angle Mix</option>
+                    <option value="31">Blackbox erase</option>
+                    <option value="32">Camera Control 1</option>
+                    <option value="33">Camera Control 2</option>
+                    <option value="34">Camera Control 3</option>
+                    <option value="35">Turtle mode</option>
+                    <option value="36">Prearm</option>
+                    <option value="37">Beep # of satellites</option>
+                    <option value="39">VTX Pit Mode</option>
+                    <option value="44">PID Audio</option>
+                    <option value="45">Paralyze</option>
+                    <option value="46">GPS Rescue</option>
+                    <option value="47">Acro Trainer</option>
+                  </select>
+                </div>
+                <p class="help">When the above mode (as configured in the modes tab of your configurator) is activated, your PinIO device will activate. To bind the PinIO device to a custom mode, choose User 1-4</p>
+              </div>
+            </div>
+            <button id="generate-cli-button" class="button" onclick="generateCLI()" disabled>Generate CLI</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="message">
+          <div class="message-header">
+            <p>Output</p>
+          </div>
+          <div class="message-body">
+            <p class="content">Paste the following block of code (you can do them all at once or individually) into the command area of your CLI tab, and hit enter.</p>
+            <textarea id="output" class="textarea content" style="height:200px; font-family: 'Roboto Mono', monospace; line-height: 1em;" oninput="checkTextArea()" spellcheck="false" readonly></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+      </div>
+    </footer>
+  </div>
+  </body>
